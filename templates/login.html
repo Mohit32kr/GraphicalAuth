@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <h2>User Login</h2>
+
+  <div id="loginContainer">
+    <!-- Left: Image area -->
+    <div id="imgContainer">
+      <img id="authImage" src="" alt="Authentication Image" />
+    </div>
+
+    <!-- Right: Inputs -->
+    <div id="loginFields">
+      <input type="text" id="username" placeholder="Enter Username" /><br />
+      <select id="imageSelect">
+        <option value="" selected disabled>Select Image</option>
+        <option value="img1.jpg">Image 1</option>
+        <option value="img2.jpg">Image 2</option>
+        <option value="img3.jpg">Image 3</option>
+      </select><br />
+      <button id="loginBtn">Login</button>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+</body>
+</html>

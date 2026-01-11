@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Registration</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h2>User Registration</h2>
+
+  <div id="registerContainer">
+    <!-- Left: Image -->
+    <div id="imgContainer">
+      <img id="authImage" src="/static/images/img1.jpg" alt="Select points">
+    </div>
+
+    <!-- Right: Fields -->
+    <div id="registerFields">
+      <input type="text" id="username" placeholder="Enter Username" /><br />
+      <select id="imageSelect">
+        <option value="img1.jpg">Image 1</option>
+        <option value="img2.jpg">Image 2</option>
+        <option value="img3.jpg">Image 3</option>
+      </select><br />
+      <button id="registerBtn">Register</button>
+      <p><a href="/login">Go to Login</a></p>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/register.js') }}"></script>
+</body>
+</html>

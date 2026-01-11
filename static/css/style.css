@@ -1,0 +1,130 @@
+body {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background: #f7f9fc;
+}
+
+#loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+#imgContainer {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#authImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#loginFields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#username,
+#imageSelect {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    width: 150px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.fragment {
+    position: absolute;
+    border-radius: 2px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+#inputFields {
+    display: flex;
+    flex-direction: column;
+    /* stack vertically */
+    gap: 15px;
+    /* space between input and dropdown */
+    align-items: center;
+    /* center them horizontally */
+    margin-bottom: 15px;
+}
+
+#inputFields input,
+#inputFields select {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#registerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+#registerFields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#registerFields input,
+#registerFields select {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#registerFields button {
+    padding: 10px;
+    width: 150px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#registerFields button:hover {
+    background: #0056b3;
+}
